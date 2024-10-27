@@ -25,3 +25,18 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Exercise 3 : Change the style when you move your mouse over a square
+document.addEventListener("DOMContentLoaded", function() {
+  const squares = document.querySelectorAll("#board div");
+  squares.forEach((square) => {
+    square.addEventListener("mouseover", function() {
+      if (!square.classList.contains("X") && !square.classList.contains("O")) {
+        square.classList.add("hover");
+      }
+    });
+    square.addEventListener("mouseout", function() {
+      square.classList.remove("hover");
+    });
+  });
+});
+
