@@ -80,3 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
+
+//Exercise 6 : Disallowing Cheating
+//This is already implemented in the code for Exercise 2 as it checks if the square is empty before allowing a click.
