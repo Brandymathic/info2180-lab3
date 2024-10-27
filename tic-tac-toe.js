@@ -63,3 +63,20 @@ function checkWinner() {
 }
 
 
+// Exercise 5 : Restart the Game
+document.addEventListener("DOMContentLoaded", function(){
+  const newGameButton = document.querySelector(".btn");
+  newGameButton.addEventListener("click", function(){
+    const squares = document.querySelectorAll("#board div");
+    squares.forEach((square) =>{
+      square.textContent = "";
+      square.classList.remove("X", "O", "hover");
+    });
+    gameState = new Array(9).fill(null);
+    currentPlayer = X;
+    const status = document.getElementById("status");
+    status.textContent = "Move your mouse over a square and then click it to play an X or an O.";
+    status.classList.remove("you-won");
+  });
+
+});
