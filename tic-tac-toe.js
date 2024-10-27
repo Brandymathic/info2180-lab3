@@ -1,4 +1,4 @@
-// Exercise 1 - Layout the board
+// Exercise 1 : Layout the board
 document.addEventListener("DOMContentLoaded", function() {
   const squares = document.querySelectorAll("#board div");
   squares.forEach((square) => {
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Exercise 2 - Add an X or O to a square when clicked
+// Exercise 2 : Add an X or O to a square when clicked
 let currentPlayer = "X";
 let gameState = new Array(9).fill(null);
 
@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
